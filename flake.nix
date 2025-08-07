@@ -14,6 +14,7 @@
     let
       system = "aarch64-darwin";
       username = "koichiro_okamoto";
+      realUser = "koichiro.okamoto";
     in {
       darwinConfigurations.${username} = darwin.lib.darwinSystem {
         inherit system;
@@ -25,7 +26,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.${username} = import ./home/home.nix;
+            home-manager.users.${realUser} = import ./home/home.nix;
           }
         ];
       };

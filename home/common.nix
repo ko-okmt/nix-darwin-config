@@ -45,7 +45,7 @@ in
     enable = true;
 
     userName = "Koichiro Okamoto";
-    userEmail = "koichirookamoto@icloud.com";
+    userEmail = "koichiro.okamoto@sansan.com";
 
     aliases = {
       st = "status";
@@ -116,6 +116,7 @@ in
   xdg.configFile."nvim/lua/plugins/neotest.lua".source = "${nvimConfigDir}/lua/plugins/neotest.lua";
   xdg.configFile."nvim/lua/plugins/gitlinker.lua".source = "${nvimConfigDir}/lua/plugins/gitlinker.lua";
   xdg.configFile."nvim/lua/plugins/vim-abolish.lua".source = "${nvimConfigDir}/lua/plugins/vim-abolish.lua";
+  xdg.configFile."nvim/lua/plugins/conform.lua".source = "${nvimConfigDir}/lua/plugins/conform.lua";
   xdg.configFile."nvim/lua/config/options.lua".source = "${nvimConfigDir}/lua/config/options.lua";
 
   home.stateVersion = "25.05";
