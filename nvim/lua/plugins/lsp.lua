@@ -45,7 +45,11 @@ return {
 								-- JSON schema store integration
 								["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
 								["https://json.schemastore.org/github-action.json"] = "/.github/actions/*",
-								["https://json.schemastore.org/kustomization.json"] = "kustomization.yaml",
+								-- OpenAPI 3.0.x
+								["https://spec.openapis.org/oas/3.0/schema/2024-10-18"] = {
+									"**/openapi/**/*.yaml",
+									"openapi.yaml",
+								},
 							},
 						},
 					},
