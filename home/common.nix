@@ -79,9 +79,32 @@ in
       la = "eza -la";
       tree = "eza --tree";
     };
+
+    enableCompletion = true;
+
+    plugins = with pkgs; [
+      {
+        name = "zsh-autosuggestions";
+        src = zsh-autosuggestions;
+        file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
+      }
+      {
+        name = "zsh-vi-mode";
+        src = zsh-vi-mode;
+        file = "share/zsh-vi-mode/zsh-vi-mode.zsh";
+      }
+      {
+        name = "zsh-syntax-highlighting";
+        src = zsh-syntax-highlighting;
+        file = "share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh";
+      }
+    ];
   };
 
-  programs.starship.enable = true;
+
+  programs.starship = {
+    enable = true;
+  };
 
   programs.zoxide = {
     enable = true;
@@ -107,6 +130,8 @@ in
     GOPATH     = "${config.home.homeDirectory}/.go";
     GOMODCACHE = "${config.xdg.cacheHome}/go-mod";
     GOBIN      = "${config.home.homeDirectory}/.local/bin";  # go install で PATH に通るように
+    VISUAL     = "nvim";
+    EDITOR     = "nvim";
   };
   home.sessionPath = [
     "${config.home.homeDirectory}/.local/bin"
