@@ -14,7 +14,7 @@
     let
       system = "aarch64-darwin";
       username = "koichiro_okamoto";
-      realUser = "koichiro.okamoto";
+      realUser = "koichiro_okamoto";
     in {
       darwinConfigurations.${username} = darwin.lib.darwinSystem {
         inherit system;

@@ -3,20 +3,14 @@
 {
   system.stateVersion = 6;
 
-  system.primaryUser = "koichiro.okamoto";
+  system.primaryUser = "koichiro_okamoto";
 
   # ホスト名
-  networking.hostName = "koichiro-mac-work";
+  networking.hostName = "koichiro-mac";
 
   # brew cask 管理
   homebrew = {
     enable = true;
-
-    brews = [
-      "vips"
-      "libyaml"
-      "openssl"
-    ];
 
     casks = [
       "raycast"
@@ -29,12 +23,9 @@
       "ghostty"
       "discord"
       "spotify"
-      "docker-desktop"
-      "session-manager-plugin"
       "tableplus"
       "maccy"
       "font-google-sans-code"
-      "aws-vpn-client"
       "brave-browser"
     ];
 
@@ -46,8 +37,8 @@
 
   programs.zsh.enable = true;
 
-  users.users."koichiro.okamoto" = {
-    home = "/Users/koichiro.okamoto";
+  users.users."koichiro_okamoto" = {
+    home = "/Users/koichiro_okamoto";
   };
 }
 
