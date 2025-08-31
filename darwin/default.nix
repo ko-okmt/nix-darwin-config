@@ -28,6 +28,7 @@
       "font-google-sans-code"
       "brave-browser"
       "google-chrome"
+      "zed"
     ];
 
     onActivation = {
