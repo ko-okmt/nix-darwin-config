@@ -20,14 +20,14 @@ let
     direnv
   ];
 
-  goPackages = with pkgs; [
+  goPackages = with pkgs.unstable; [
     go
     gopls
     go-tools
     goreleaser
   ];
 
-  nodePackages = with pkgs; [
+  nodePackages = with pkgs.unstable; [
     nodejs_24
     codex
     pnpm

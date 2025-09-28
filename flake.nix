@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     darwin.url = "github:lnl7/nix-darwin";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
@@ -10,7 +11,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, ... }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, darwin, home-manager, ... }:
     let
       system = "aarch64-darwin";
       username = "koichiro_okamoto";
@@ -20,6 +21,16 @@
         inherit system;
 
         modules = [
+          { nixpkgs.overlays = [
+            (final: prev: {
+               unstable = import nixpkgs-unstable {
+                  inherit system;
+                  config.allowUnfree = true;
+                };
+              })
+            ];
+          }
+
           ./darwin/default.nix
 
           home-manager.darwinModules.home-manager
