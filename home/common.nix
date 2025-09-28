@@ -45,7 +45,7 @@ in
     enable = true;
 
     userName = "Koichiro Okamoto";
-    userEmail = "koichiro.okamoto@sansan.com";
+    userEmail = "koichirookamoto@icloud.com";
 
     aliases = {
       st = "status";
