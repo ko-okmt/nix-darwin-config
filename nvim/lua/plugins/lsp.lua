@@ -19,6 +19,9 @@ return {
 				-- TypeScript / JavaScript
 				vtsls = {},
 
+				-- Svelte
+				svelte = {},
+
 				-- Ruby
 				ruby_lsp = {
 					mason = false,
