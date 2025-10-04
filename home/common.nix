@@ -143,6 +143,7 @@ in
   xdg.configFile."nvim/lua/plugins/vim-abolish.lua".source = "${nvimConfigDir}/lua/plugins/vim-abolish.lua";
   xdg.configFile."nvim/lua/plugins/conform.lua".source = "${nvimConfigDir}/lua/plugins/conform.lua";
   xdg.configFile."nvim/lua/config/options.lua".source = "${nvimConfigDir}/lua/config/options.lua";
+  xdg.configFile."nvim/lua/config/treesitter.lua".source = "${nvimConfigDir}/lua/config/treesitter.lua";
 
   home.stateVersion = "25.05";
 }

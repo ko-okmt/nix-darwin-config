@@ -17,7 +17,10 @@ return {
 				},
 
 				-- TypeScript / JavaScript
-				vtsls = {},
+				vtsls = {
+					filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+					single_file_support = false,
+				},
 
 				-- Svelte
 				svelte = {},
