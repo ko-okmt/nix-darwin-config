@@ -20,6 +20,10 @@ let
     direnv
   ];
 
+  baseUnstablePackages = with pkgs.unstable; [
+    helix
+  ];
+
   goPackages = with pkgs.unstable; [
     go
     gopls
@@ -34,7 +38,7 @@ let
     bun
   ];
 
-  allPackages = basePackages ++ goPackages ++ nodePackages;
+  allPackages = basePackages ++ baseUnstablePackages ++ goPackages ++ nodePackages;
 
   nvimConfigDir = ../nvim;
 in
