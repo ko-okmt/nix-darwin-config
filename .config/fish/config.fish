@@ -3,6 +3,11 @@ if test -d /opt/homebrew/bin
   fish_add_path /opt/homebrew/bin
 end
 
+# --- Rancher Desktop ---
+if test -d $HOME/.rd/bin
+  fish_add_path $HOME/.rd/bin
+end
+
 # --- 環境の静音化（不要なメッセージ抑制）---
 set -gx HOMEBREW_NO_ENV_HINTS 1
 

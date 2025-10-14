@@ -33,6 +33,8 @@ cask "zed"
 
 hostname = `hostname`.strip
 if hostname == "koichiro-mac-work"
+  brew "azure-cli"
+
   cask "dotnet-sdk@8"
   cask "gather"
   cask "jetbrains-toolbox"
