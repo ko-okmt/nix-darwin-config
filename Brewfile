@@ -19,6 +19,7 @@ tap "oven-sh/bun"
 brew "oven-sh/bun/bun"
 brew "fish"
 brew "fisher"
+brew "zig"
 
 cask "raycast"
 cask "rectangle"
@@ -36,7 +37,6 @@ hostname = `hostname`.strip
 if hostname == "koichiro-mac-work"
   brew "azure-cli"
 
-  cask "dotnet-sdk@8"
   cask "gather"
   cask "jetbrains-toolbox"
   cask "linqpad"
