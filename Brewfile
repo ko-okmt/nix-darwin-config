@@ -18,6 +18,7 @@ brew "pnpm"
 tap "oven-sh/bun"
 brew "oven-sh/bun/bun"
 brew "fish"
+brew "fisher"
 
 cask "raycast"
 cask "rectangle"
