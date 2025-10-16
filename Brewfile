@@ -36,7 +36,8 @@ cask "zed"
 hostname = `hostname`.strip
 if hostname == "koichiro-mac-work"
   brew "azure-cli"
-  brew "gemini"
+  brew "gemini-cli"
+  brew "grpcurl"
 
   cask "gather"
   cask "jetbrains-toolbox"
