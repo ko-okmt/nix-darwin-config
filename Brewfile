@@ -47,6 +47,7 @@ if hostname == "koichiro-mac-work"
   cask "notion"
   cask "powershell"
   cask "visual-studio-code"
+  cask "rancher"
 else
   cask "orbstack"
   cask "brave-browser"
