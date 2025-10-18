@@ -1,0 +1,42 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "icon_theme": "Zed (Default)",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Gruvbox Dark"
+  },
+  "relative_line_numbers": true,
+
+  // LSPs
+  "lsp": {
+    "ols": {
+      "initialization_options": {
+        "enable_hover": true,
+        "enable_snippets": true,
+        "enable_procedure_snippet": true,
+        "enable_completion_matching": true,
+        "enable_references": true,
+        "enable_document_symbols": true,
+        "enable_format": true,
+        "enable_document_links": true,
+        "collections": [
+          {
+            "name": "core",
+            "path": "/opt/homebrew/Cellar/odin/2025-10/libexec/core"
+          }
+        ]
+      }
+    }
+  }
+}
