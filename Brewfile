@@ -33,6 +33,9 @@ cask "spotify"
 cask "tableplus"
 cask "maccy"
 cask "zed"
+cask "proton-mail"
+cask "proton-drive"
+cask "proton-pass"
 
 hostname = `hostname`.strip
 if hostname == "koichiro-mac-work"
