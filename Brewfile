@@ -20,6 +20,7 @@ brew "oven-sh/bun/bun"
 brew "fish"
 brew "fisher"
 brew "zig"
+brew "odin"
 
 cask "raycast"
 cask "rectangle"
